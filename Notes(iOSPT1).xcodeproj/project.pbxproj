@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F1948C492277DED2003461A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1948C482277DED2003461A6 /* AppDelegate.swift */; };
-		F1948C4B2277DED2003461A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1948C4A2277DED2003461A6 /* ViewController.swift */; };
 		F1948C4E2277DED2003461A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1948C4C2277DED2003461A6 /* Main.storyboard */; };
 		F1948C502277DED3003461A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1948C4F2277DED3003461A6 /* Assets.xcassets */; };
 		F1948C532277DED3003461A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1948C512277DED3003461A6 /* LaunchScreen.storyboard */; };
+		F1948C5C2277E9BB003461A6 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1948C5B2277E9BB003461A6 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1948C452277DED2003461A6 /* Notes(iOSPT1).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes(iOSPT1).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1948C482277DED2003461A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1948C4A2277DED2003461A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1948C4D2277DED2003461A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1948C4F2277DED3003461A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1948C522277DED3003461A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1948C542277DED3003461A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1948C5B2277E9BB003461A6 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		F1948C472277DED2003461A6 /* Notes(iOSPT1) */ = {
 			isa = PBXGroup;
 			children = (
-				F1948C482277DED2003461A6 /* AppDelegate.swift */,
-				F1948C4A2277DED2003461A6 /* ViewController.swift */,
+				F1948C5B2277E9BB003461A6 /* NotesViewController.swift */,
 				F1948C4C2277DED2003461A6 /* Main.storyboard */,
+				F1948C5A2277E266003461A6 /* Resources */,
+			);
+			path = "Notes(iOSPT1)";
+			sourceTree = "<group>";
+		};
+		F1948C5A2277E266003461A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F1948C4F2277DED3003461A6 /* Assets.xcassets */,
+				F1948C482277DED2003461A6 /* AppDelegate.swift */,
 				F1948C512277DED3003461A6 /* LaunchScreen.storyboard */,
 				F1948C542277DED3003461A6 /* Info.plist */,
 			);
-			path = "Notes(iOSPT1)";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1948C4B2277DED2003461A6 /* ViewController.swift in Sources */,
+				F1948C5C2277E9BB003461A6 /* NotesViewController.swift in Sources */,
 				F1948C492277DED2003461A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KBWP959TD;
-				INFOPLIST_FILE = "Notes(iOSPT1)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Notes(iOSPT1)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KBWP959TD;
-				INFOPLIST_FILE = "Notes(iOSPT1)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Notes(iOSPT1)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
